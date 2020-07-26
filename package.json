@@ -1,7 +1,7 @@
 {
   "name": "my-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio",
   "main": "index.js",
   "engines": {
     "node": "v12.16.3"
@@ -9,11 +9,24 @@
   "scripts": {
     "start": "node ./index.js"
   },
-  "author": "",
+  "author": "sc",
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "helmet": "^3.23.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-dot/port-page.git"
+  },
+  "keywords": [
+    "web",
+    "page"
+  ],
+  "bugs": {
+    "url": "https://github.com/web-dot/port-page/issues"
+  },
+  "homepage": "https://github.com/web-dot/port-page#readme"
 }
