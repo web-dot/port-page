@@ -80,6 +80,20 @@
   font-size: 50px;
   margin: 5px;
   border-radius: 10px;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+.projectnum:hover {
+	top: -10px;
+	left: -3px;
+  box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+}
+.projectnum:active {
+	top: 2px;
+	left: 2px;
+	background-color: #e50000;
+	box-shadow: inset 0 0 10px rgba(82, 82, 82, 0.85);
 }
 #nodetext{
   color: rgb(0, 124, 0);
