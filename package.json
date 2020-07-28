@@ -15,18 +15,5 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "helmet": "^3.23.3"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/web-dot/port-page.git"
-  },
-  "keywords": [
-    "web",
-    "page"
-  ],
-  "bugs": {
-    "url": "https://github.com/web-dot/port-page/issues"
-  },
-  "homepage": "https://github.com/web-dot/port-page#readme"
+  }
 }
