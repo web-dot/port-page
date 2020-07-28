@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="eng">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>my portfolio</title>
   </head>
   <body>
+
+    <canvas class="canvas" width="1200" height="200px"></canvas>
     <div class="heading">
-      <p>dev page {":"}</p>
+      <p></p>
+      <div class="devbrief">
+        <p>Hello,<br> I am a TOY developer and<br> this is my TOY page<br>HOPE you like it! </p>
+      </div>
+      
     </div>
 
     <div class="projects">
@@ -17,21 +23,135 @@
       </div>
 
       <div class="projectsbox">
-        <div class="projectnum"><a href="https://cryptic-mesa-47452.herokuapp.com/">user-authentication <br> <span id="nodetext">node.js, express.js, auth0, passport.js</span></a></div>
-        <div class="projectnum"><a href="https://mighty-peak-50021.herokuapp.com/">Restaurant portal <br> <span id="nodetext">node.js</span></a></div>
-        <div class="projectnum"></div>
+        <div class="projectnum"><a target="blank" href="https://cryptic-mesa-47452.herokuapp.com/">user-authentication <br> <span id="nodetext">node.js, express.js, auth0, passport.js</span></a></div>
+        <div class="projectnum"><a target="blank" href="https://mighty-peak-50021.herokuapp.com/">restaurant portal <br> <span id="nodetext">node.js</span></a></div>
+        <div class="projectnum"><a target="blank" href="https://rocky-plains-50307.herokuapp.com/">news app <br> <span id="nodetext">REST API, node.js, express  </span></a></div>
+
       </div>
       
     </div>
 
-    <!-- <div class="skills">
-      <p>skills</p>
-    </div> -->
+    <div class="tools">
+      <p>tools</p>
+      <div class="tool">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>media query</p>
+        <p>ES5</p>
+        <p>Node.js</p>
+        <p>npm</p>
+        <p>Express</p>
+      </div>
+    </div>
 
     <div class="connectbox">
-      <p id="connect">connect</p>
-      <p id="developer">developer : sudipto chakraborty</p>
-      <p id="developer">e-mail : fedev.sudipto@gmail.com</p>
+      <!-- <p id="connect">connect</p> -->
+      <p id="developer"><span id="red">toy</span> developer : sudipto chakraborty</p>
+      <p id="developer"> mail : fedev.sudipto@gmail.com</p>
     </div>
+
+
+
+    <script>
+      function draw() {
+        var ctx = document.querySelector('canvas').getContext('2d');
+        ctx.font = '48px serif';
+        ctx.fillText('Hello world', 10, 50);
+        ctx.fillText('Hello world', 10, 50)
+      }
+      let canvas = document.querySelector("canvas");
+      let ctx = canvas.getContext('2d');
+
+    canvas.width = innerWidth;
+    // canvas.height = innerHeight;
+
+
+    var circle = {
+      x: 100,
+      y: 100,
+      r:50
+    };
+
+    var rect_01 = {
+      x : 100,
+      y : 10,
+      w : 100,
+      h : 100
+    }
+
+    var rect_02 = {
+      x : 300,
+      y : 100,
+      w : 200,
+      h : 100
+    }
+
+    var rect_03 = {
+      x : 100,
+      y : 100,
+      w : 200,
+      h : 100
+    }
+
+    var rect_04 = {
+      x : 100,
+      y : 50,
+      w : 200,
+      h : 100
+    }
+
+    let dx = 2
+
+    setInterval(drawRect_01, 10);
+    setInterval(drawRect_02, 10);
+    setInterval(drawRect_03, 10);
+    setInterval(drawRect_04, 10);
+    // setInterval(draw, 10);
+    
+
+    function drawRect_01 () {
+      ctx.clearRect(0, 0, innerWidth, innerHeight)
+      ctx.strokeStyle = 'green'
+      ctx.stroke();
+      ctx.strokeRect(rect_01.x, rect_01.y, rect_01.w, rect_01.h);
+      rect_01.x += dx+5;
+
+      if (rect_01.x + dx > innerWidth) {
+        rect_01.x = 0;
+      }
+    }
+    function drawRect_02 () {
+      ctx.strokeStyle = 'red'
+      ctx.stroke();
+      ctx.strokeRect(rect_02.x, rect_02.y, rect_02.w, rect_02.h);
+      rect_02.x += dx+2;
+
+      if (rect_02.x + dx > innerWidth) {
+        rect_02.x = 0;
+      }
+    }
+
+    function drawRect_03 () {
+      ctx.strokeStyle = 'blue'
+      ctx.stroke();
+      ctx.strokeRect(rect_03.x, rect_03.y, rect_03.w, rect_03.h);
+      rect_03.x += dx+4;
+
+      if (rect_03.x + dx > innerWidth) {
+        rect_03.x = 0;
+      }
+    }
+
+    function drawRect_04 () {
+      ctx.strokeStyle = 'blue'
+      ctx.stroke();
+      ctx.strokeRect(rect_04.x, rect_04.y, rect_04.w, rect_04.h);
+      rect_04.x -= dx+5;
+
+      if (rect_04.x + dx < 0) {
+        rect_04.x = innerWidth;
+      }
+    }
+    </script>
   </body>
 </html>
