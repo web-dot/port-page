@@ -103,8 +103,8 @@
   margin-bottom: 30px;
 }
 .projectnum{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   /* border: 1px solid green; */
   background: #4b4b4b;
   color: #575757;
@@ -166,5 +166,10 @@
 @media screen and (min-width: 508px){
   .tools{
     height: 250px;
+  }
+}
+@media screen and (max-width: 655px){
+  .projects{
+    height: 1450px;
   }
 }
