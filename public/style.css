@@ -88,23 +88,23 @@
   height: 80px;
 }
 .projectsbox{
-  height: 500px;
+  height: 300px;
   /* border: 1px solid green; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .projectsbox a{
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff;
   margin-bottom: 30px;
 }
 .projectnum{
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   /* border: 1px solid green; */
   background: #4b4b4b;
   color: #575757;
@@ -137,13 +137,13 @@
 }
 @media screen and (min-width: 768px){
   .projects{
-    height: 800px;
+    height: 500px;
   }
   .tool p{
     margin: 20px;
     margin-right: 10px;
     color: rgb(0, 218, 0);
-    font-size: 35px;
+    font-size: 20px;
     margin: 36px;
     display: flex;
     float: right;
@@ -170,6 +170,6 @@
 }
 @media screen and (max-width: 655px){
   .projects{
-    height: 1450px;
+    height: 1250px;
   }
 }
